@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "framecurator"
+version = "0.0.0"
+description = "Отбор качественных и разнообразных кадров из видео по попарным предпочтениям"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+authors = [{ name = "Алексей Образцов" }]
+# Только зависимости, которые уже используются в коде. Тяжёлые пакеты
+# (PyAV, PySceneDetect, torch, pyiqa, lightgbm, streamlit, mediapipe)
+# добавляются отдельными extras на соответствующих этапах после проверки установки.
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pandas>=2.1",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "scripts", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]

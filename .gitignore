@@ -1,0 +1,35 @@
+# Приватность (раздел 2, п. 9): сырые видео и кадры не коммитятся
+data/raw_videos/
+data/frames/
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.m4v
+*.mkv
+*.avi
+*.insv
+*.lrf
+*.LRF
+# Субтитры DJI содержат GPS-координаты
+*.srt
+*.SRT
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Ноутбуки и IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Локальные секреты и контакты оценщиков (хранятся вне репозитория)
+.env
+*raters_contacts*
