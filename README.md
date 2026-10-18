@@ -4,7 +4,7 @@
 с факторной проверкой «оценщик (готовая IQA / обученный) × отбор (top-k / MMR)».
 
 Статус: **неделя 0** — скелет репозитория, симуляция мощности, черновик предрегистрации.
-Спецификация и план — [CLAUDE.md](CLAUDE.md), протокол разметки — [docs/protocol.md](docs/protocol.md),
+Протокол разметки — [docs/protocol.md](docs/protocol.md),
 журнал — [docs/experiment_log.md](docs/experiment_log.md).
 
 Предрегистрация: *ещё не опубликована* (черновик в [docs/preregistration.md](docs/preregistration.md)).

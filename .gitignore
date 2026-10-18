@@ -33,3 +33,12 @@ dist/
 # Локальные секреты и контакты оценщиков (хранятся вне репозитория)
 .env
 *raters_contacts*
+
+# Локальные видео автора
+framecurator_videos/
+
+# Локальные файлы ассистента (не публикуются)
+CLAUDE.md
+AGENTS.md
+docs/prompts.md
+.claude/
